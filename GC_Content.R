@@ -1,4 +1,4 @@
-# Function to calculate the GC-content of a sequence, regardless of the capitilization 
+# Assignment 9: Function to calculate the GC-content of a sequence, regardless of the capitilization 
 # of that sequence
 
 gc_content <- function(gc_percent, G, C){
