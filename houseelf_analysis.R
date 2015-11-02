@@ -7,6 +7,7 @@ get_data <- function(){
   return(data)
 }
 
+
 # Assignment 9: Function to calculate the GC-content of a sequence, regardless of 
 # the capitilization of that sequence
 
@@ -35,3 +36,10 @@ for(i in dna_seq){
 
 
 #
+
+gc_size_class <- function(ear_length){
+   #Calculate the size class of one or more sequences
+   ear_lengths <- ifelse(ear_length > 10, "large", "small")
+   return(ear_lengths)
+}
+
