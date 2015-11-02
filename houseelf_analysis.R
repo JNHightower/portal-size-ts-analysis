@@ -13,11 +13,6 @@ get_data <- function(){
 library(stringr)
 library(dplyr)
 
-
-c_content <- c('cGcGgCCCccccC')
-c_content
-C <- str_to_upper(c_content)
-C
 # Create function to determine GC content in sequence, regardless of capitilization
 gc_content <- function(gc_percent, G, C){
   GC_upper <- str_to_upper(i)
