@@ -4,8 +4,14 @@
 library(stringr)
 library(dplyr)
 
-# Create function to determine GC content in sequence
+
+c_content <- c('cGcGgCCCccccC')
+c_content
+C <- str_to_upper(c_content)
+C
+# Create function to determine GC content in sequence, regardless of capitilization
 gc_content <- function(gc_percent, G, C){
+  GC_upper <- str_to_upper(i)
   G <- str_count(i, 'G')
   C <- str_count(i, 'C')
   gc_percent <- (G + C) / str_length(i) * 100
