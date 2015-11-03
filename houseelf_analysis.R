@@ -45,6 +45,7 @@ for(i in dna_seq){
   print(GC_Content_DNA_seqs)
 }
 
-
+# Create data frame of all variables 
 EarLengthSC_GCcontent <- data.frame(id, ear_length_class, GC_Content_DNA_seqs)
 EarLengthSC_GCcontent
+write.csv(EarLengthSC_GCcontent, "HouseElf_Data.csv")
